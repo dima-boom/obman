@@ -31,7 +31,7 @@ try:
                                                "random_id": get_random_id(),
                                                'keyboard': clava3.get_keyboard()})
 
-    token = "3ec4bfb35e282278b2b5fbe78312dae4f71befbb9daed2cc6b8d48530504f741971f330e726b7f98dd600"
+    token = "5bce844c8a3db4d68662d611fd306da33389a6de1edd56299439c5d56d8cbe5a1fc08a9f696d745bebc9f"
     authorize = vk_api.VkApi(token=token)
     longpoll = VkLongPoll(authorize)
     admin = 574170405
